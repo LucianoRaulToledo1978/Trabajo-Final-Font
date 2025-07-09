@@ -1,0 +1,69 @@
+   
+/* Contenedor general del mensaje */
+.formato-dialogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+  padding: 10px 14px;
+  margin: 8px;
+  border-radius: 10px;
+  max-width: 70%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  word-break: break-word;
+}
+
+/* Mensaje enviado por "YO" */
+.formato-dialogo.formato-dialogo_mi-mensaje {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  color: #000;
+}
+
+/* Nombre/emisor */
+.formato-dialogo > span:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* Texto del mensaje */
+.formato-dialogo > span:nth-child(2) {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Contenedor hora y estado */
+.formato-dialogo > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* Botón eliminar */
+.formato-dialogo button {
+  margin-top: 6px;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: color 0.3s;
+}
+
+.formato-dialogo button:hover {
+  color: #e53935;
+}
+
+/* Responsive: se adapta en pantallas más chicas */
+@media screen and (max-width: 600px) {
+  .formato-dialogo {
+    max-width: 85%;
+    font-size: 0.95rem;
+  }
+}

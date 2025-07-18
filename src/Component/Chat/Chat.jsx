@@ -3,12 +3,14 @@ import Mensajes from '../Mensajes/Mensajes';
 import { MensajesContext } from '../../Context/MensajesContext';
 
 
+
+
 export default function Chat() {
     const {mensajes} = useContext(MensajesContext)
 
 
   return (
-    <div>
+    <div className='chats'>
         {
             mensajes.map((mensaje)=>{
                 return(

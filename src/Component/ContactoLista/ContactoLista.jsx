@@ -3,6 +3,8 @@ import {ContactoContext} from "../../Context/ContactoContex";
 import ContactoItem from "../ContactoItem/ContactoItem";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
 
+import './ContactoLista.css'
+
 const ContactoLista =()=>{
     const{contactos, isLoadingContactos}=useContext(ContactoContext)
 
@@ -11,7 +13,7 @@ const ContactoLista =()=>{
     }
 
     return (
-        <div>
+        <div className="cntac-list">
             {
                 contactos.map(
                     (contacto) => {

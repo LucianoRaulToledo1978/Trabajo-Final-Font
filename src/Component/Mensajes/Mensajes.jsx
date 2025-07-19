@@ -11,7 +11,7 @@ export default function Mensajes({emisor, hora, id, texto, estatus}) {
     const {handleEliminar} = useContext(MensajesContext)
 
     const classNames={mensa:'formato-dialogo'}
-    if(emisor==='YO'){classNames.mensa = classNames.mensa + 'formato-dialogo_mi-mensaje'}
+    if(emisor==='Luciano'){classNames.mensa = classNames.mensa + 'formato-dialogo_mi-mensaje'}
 
   return (
     <div className={classNames.mensa}>

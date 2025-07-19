@@ -24,8 +24,11 @@
             <div>
                 <Link to={`/contactos/${contacto_id}/detail`}>Ir a detalle de contacto</Link>
 
+                <cabezera/>
+
                 <Chat/>
                 <FormularioMensajeNuevo/>
+
                 
 
             </div>

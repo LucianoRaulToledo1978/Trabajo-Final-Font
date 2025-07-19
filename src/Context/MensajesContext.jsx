@@ -45,7 +45,7 @@ export const MensajesContext= createContext(
     }
 
     const nuevoMens = (text)=>{
-        const nuevo_mensaje ={emisor:'YO: ',hora:'9:30',texto:text,status:'visto',id:mensajes.length+1 }
+        const nuevo_mensaje ={emisor:'Luciano: ',hora:'9:30',texto:text,status:'visto',id:mensajes.length+1 }
         const clon_mensajes = [...mensajes]
         clon_mensajes.push(nuevo_mensaje)
         setMensajes(clon_mensajes)

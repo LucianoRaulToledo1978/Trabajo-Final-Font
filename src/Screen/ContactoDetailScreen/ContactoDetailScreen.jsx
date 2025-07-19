@@ -23,7 +23,10 @@ export default function ContactoDetailScreen() {
     }
     return (
         <div>
+            <div>{contacto_detail?.img}</div>
             <h1>{contacto_detail?.name}</h1>
+            <p>Llamar</p>
+            <p>Notificciones</p>
             
         </div>
     )

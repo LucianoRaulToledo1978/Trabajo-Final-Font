@@ -1,69 +1,76 @@
-   
-/* Contenedor general del mensaje */
 .formato-dialogo {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: #e5e5ea;
-  color: #000;
-  padding: 10px 14px;
-  margin: 8px;
+  max-width: 75%;
+  margin: 10px;
+  padding: 10px 12px;
   border-radius: 10px;
-  max-width: 70%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
   position: relative;
-  word-break: break-word;
+  font-family: 'Segoe UI', sans-serif;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Mensaje enviado por "YO" */
-.formato-dialogo.formato-dialogo_mi-mensaje {
-  align-self: flex-end;
-  background-color: #dcf8c6;
-  color: #000;
-}
-
-/* Nombre/emisor */
-.formato-dialogo > span:first-child {
+.formato-dialogo span:first-child {
   font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 0.9rem;
-}
-
-/* Texto del mensaje */
-.formato-dialogo > span:nth-child(2) {
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-
-/* Contenedor hora y estado */
-.formato-dialogo > div {
-  display: flex;
-  justify-content: flex-end;
-  gap: 6px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #555;
 }
 
-/* Botón eliminar */
-.formato-dialogo button {
+.formato-dialogo span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.formato-dialogo div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin-top: 6px;
-  align-self: flex-end;
-  background-color: transparent;
-  border: none;
-  color: #999;
-  cursor: pointer;
   font-size: 0.75rem;
-  transition: color 0.3s;
+  color: #777;
+  gap: 5px;
+}
+
+.formato-dialogo button {
+  align-self: flex-end;
+  margin-top: 5px;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  background-color: transparent;
+  color: #888;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .formato-dialogo button:hover {
-  color: #e53935;
+  color: red;
 }
 
-/* Responsive: se adapta en pantallas más chicas */
-@media screen and (max-width: 600px) {
+/* ESTILO PARA TUS MENSAJES (Luciano) */
+.formato-dialogo_mi-mensaje {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+/* ESTILO PARA MENSAJES DE OTROS */
+.formato-dialogo:not(.formato-dialogo_mi-mensaje) {
+  align-self: flex-start;
+  background-color: #fff;
+  border-top-left-radius: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
   .formato-dialogo {
-    max-width: 85%;
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .formato-dialogo span:nth-child(2) {
     font-size: 0.95rem;
   }
 }

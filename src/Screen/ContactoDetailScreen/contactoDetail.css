@@ -1,0 +1,67 @@
+.contacto-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #e5ddd5;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contacto-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #25d366;
+  background-color: white;
+}
+
+.contacto-nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #075e54;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contacto-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.contacto-opciones p {
+  background-color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contacto-opciones p:hover {
+  background-color: #dcf8c6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contacto-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .contacto-nombre {
+    font-size: 1.2rem;
+  }
+
+  .contacto-opciones {
+    max-width: 100%;
+  }
+}

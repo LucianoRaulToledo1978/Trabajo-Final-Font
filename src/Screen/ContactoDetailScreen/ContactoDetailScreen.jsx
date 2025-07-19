@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { ContactoDetailContext } from '../../Context/ContactoDetailContext'
 import LoaderSpinner from '../../Component/LoaderSpinner/LoaderSpinner'
+import './contactoDetail.css'
 
 
 
@@ -22,11 +23,21 @@ export default function ContactoDetailScreen() {
         return<LoaderSpinner/>
     }
     return (
-        <div>
-            <div>{contacto_detail?.img}</div>
-            <h1>{contacto_detail?.name}</h1>
-            <p>Llamar</p>
-            <p>Notificciones</p>
+        <div className='contacto-detail-container'>
+
+            <img
+            src={contacto_detail?.img}
+            alt={`Foto de ${contacto_detail?.name}`}
+            className= "contacto-img"/>
+
+
+            <h1 className='contacto-nombre'>{contacto_detail?.name}</h1>
+
+            <div className='contacto-opciones'>
+                <p>Llamar</p>
+                <p>Notificciones</p>
+
+            </div>     
             
         </div>
     )

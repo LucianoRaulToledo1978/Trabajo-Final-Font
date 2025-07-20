@@ -1,0 +1,70 @@
+.wa-header {
+  background-color: #075E54;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 56px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wa-title {
+  font-size: 22px;
+  flex: 1;
+}
+
+.wa-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.wa-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wa-icon:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .wa-header {
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+
+  .wa-title {
+    font-size: 20px;
+  }
+
+  .wa-icon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wa-header {
+    padding: 8px 10px;
+  }
+
+  .wa-title {
+    font-size: 18px;
+  }
+
+  .wa-icons {
+    gap: 12px;
+  }
+
+  .wa-icon {
+    font-size: 18px;
+  }
+}

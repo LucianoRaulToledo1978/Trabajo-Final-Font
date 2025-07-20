@@ -2,6 +2,8 @@ import React, {useContext} from "react";
 import {ContactoContext} from "../../Context/ContactoContex";
 import ContactoItem from "../ContactoItem/ContactoItem";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
+import HeaderWhatsApp from "../HeaderWhatsApp/HeaderWhatsApp";
+
 
 import './ContactoLista.css'
 
@@ -14,6 +16,7 @@ const ContactoLista =()=>{
 
     return (
         <div className="cntac-list">
+            <HeaderWhatsApp/>
             {
                 contactos.map(
                     (contacto) => {
@@ -30,7 +33,16 @@ const ContactoLista =()=>{
                     }
                 )
             }
-        </div>
+    
+        </div>   
+        
+        
+        
+
+        
+
+
+
     )
 }
 

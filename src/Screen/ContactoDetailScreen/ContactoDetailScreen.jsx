@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import { ContactoDetailContext } from '../../Context/ContactoDetailContext'
 import LoaderSpinner from '../../Component/LoaderSpinner/LoaderSpinner'
 import './contactoDetail.css'
+import { Link } from 'react-router'
 
 
 
@@ -24,6 +25,10 @@ export default function ContactoDetailScreen() {
     }
     return (
         <div className='contacto-detail-container'>
+
+            <Link to="/contactos" className="wa-button back">
+                ← Volver a contactos
+            </Link>
 
             <img
             src={contacto_detail?.img}

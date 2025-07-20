@@ -50,6 +50,32 @@
   background-color: #dcf8c6;
 }
 
+.wa-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.wa-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.03);
+}
+
+.wa-button.back {
+  background-color: #128C7E; /* verde más oscuro para diferenciar */
+}
+
+
+
 /* Responsive */
 @media (max-width: 600px) {
   .contacto-img {
@@ -63,5 +89,12 @@
 
   .contacto-opciones {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wa-button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }

@@ -1,6 +1,6 @@
 .wa-button {
   display: inline-block;
-  background-color: #25D366; /* verde WhatsApp */
+  background-color: #25D366; 
   color: white;
   padding: 10px 20px;
   margin: 16px 0;
@@ -16,6 +16,10 @@
 .wa-button:hover {
   background-color: #1ebe5d;
   transform: scale(1.03);
+}
+
+.wa-button.back {
+  background-color: #128C7E; 
 }
 
 @media screen and (max-width: 480px) {

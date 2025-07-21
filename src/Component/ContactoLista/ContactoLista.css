@@ -10,7 +10,7 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilo de cada item (esto debería ir también en ContactoItem.css, pero te lo muestro acá para que tengas la idea) */
+
 .contacto-item {
   display: flex;
   align-items: center;
